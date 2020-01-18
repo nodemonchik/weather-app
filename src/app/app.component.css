@@ -251,3 +251,51 @@
 .hamburger__icon__fill-dark {
   fill: #ffff;
 }
+
+/*
+================
+    Body
+================
+*/
+
+.main-container__bg {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -2;
+  opacity: 0;
+  background: white;
+  transition: opacity 300ms linear;
+}
+
+.main-container__bg-dark {
+  opacity: 1;
+  background: linear-gradient(to bottom, #B290FF, #2E1D65);
+  transition: opacity 300ms linear;
+}
+
+/*
+================-
+    Footer
+================
+*/
+.main__footer {
+  background: transparent;
+  position: absolute;
+  bottom: 1rem;
+  left: 1.5rem;
+  z-index: 100;
+}
+
+.copyright__text {
+  letter-spacing: 0.1rem;
+  color: white;
+}
+
+@media only screen and (max-width: 300px) {
+  .slide-menu {
+    width: 100%;
+  }
+}
